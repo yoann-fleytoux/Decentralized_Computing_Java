@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>essai.html</title>
+</head>
+<body>
+<div style="text-align: center;">
+
+
+	
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+<title>1</title>
+<meta name="GENERATOR" content="OpenOffice.org 2.0  (Linux)">
+<meta name="AUTHOR" content="Thierry MILLAN">
+<meta name="CREATED" content="20060703;22380000">
+<meta name="CHANGEDBY" content="MILLAN">
+<meta name="CHANGED" content="20070123;20370000">
+
+	
+	
+	
+	
+	
+	
+	
+<style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	-->
+	</style>
+
+<img style="width: 300px; height: 224px; float: left;" alt="azaza" src="image.jpg">
+
+<p style="margin-bottom: 0cm;" align="center"><font face="Bookman Old Style, serif"><font size="5"><b>Algorithmique
+et Programmation&nbsp;</b></font></font></p>
+
+<p style="margin-bottom: 0cm;" align="center"><font face="Bookman Old Style, serif"><b>Mod&eacute;lisation
+et mise en &oelig;uvre d'applications r&eacute;parties en Java</b></font></p>
+
+<p style="margin-bottom: 0cm;" align="center"><br>
+
+</p>
+
+<p style="margin-bottom: 0cm;" align="center"><u>Atelier 1 : r&eacute;alisation
+d'un serveur Web en Java</u></p>
+<p style="margin-bottom: 0cm;" align="center"><u> </u>
+</p>
+
+<div style="text-align: justify;">
+
+
+	
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+<title>1</title>
+<meta name="GENERATOR" content="OpenOffice.org 2.0  (Linux)">
+<meta name="AUTHOR" content="Thierry MILLAN">
+<meta name="CREATED" content="20060703;22380000">
+<meta name="CHANGEDBY" content="MILLAN">
+<meta name="CHANGED" content="20070123;20370000">
+
+	
+	
+	
+	
+	
+	
+	
+<style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		H1 { margin-top: 0.64cm; margin-bottom: 0cm }
+		H1.western { font-family: "Bitstream Vera Serif", serif; font-size: 12pt }
+		H1.cjk { font-family: "Bitstream Vera Sans"; font-size: 12pt }
+		H1.ctl { font-family: "Lucidasans"; font-size: 12pt }
+		H2 { margin-bottom: 0.21cm; text-decoration: underline }
+		H2.western { font-family: "Bitstream Vera Serif", serif; font-size: 12pt; font-style: italic; font-weight: medium }
+		H2.cjk { font-family: "Bitstream Vera Sans"; font-size: 12pt; font-style: italic; font-weight: medium }
+		H2.ctl { font-family: "Lucidasans"; font-size: 12pt; font-style: italic; font-weight: medium }
+		P { margin-bottom: 0.21cm }
+	-->
+	</style>
+
+<p style="margin-bottom: 0cm;">	En repartant du travail fait en TD, on
+se propose de r&eacute;aliser le serveur WEB. Ce TP se d&eacute;roule
+pour partie sous windows pour la conception et la g&eacute;n&eacute;ration
+du sch&eacute;ma de classe, et sous Linux pour la partie
+programmation proprement dite. Toute la partie analyse se trouve dans
+&laquo;&nbsp;\\agate1\Public\JavRepartie\Syst&egrave;meR&eacute;parti-S4.uml&nbsp;&raquo;</p>
+
+<h1 class="western"><big><big>Partie conception sous windows avec starUML</big></big></h1>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<ol>
+  <li>
+    <p style="margin-bottom: 0cm;">D&egrave;s la connexion sous
+	StarUML effectu&eacute;e, 
+	</p>
+
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p style="margin-bottom: 0cm;">Importez le framework &laquo;&nbsp;java
+	1.3&nbsp;&raquo; dans le paquetage &laquo;&nbsp;D- Analyse du
+	domaine&nbsp;&raquo;. Actuellement, StartUML ne fournit pas le
+	framework &laquo;&nbsp;java 1.5&nbsp;&raquo;, il faudra donc
+	effectuer des ajustements directement dans le code g&eacute;n&eacute;r&eacute;&nbsp;;</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">Inclure le profil &laquo;&nbsp;Java
+	Profile&nbsp;&raquo;.</p>
+
+  </li>
+</ul>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<ol start="2">
+  <li>
+    <p style="margin-bottom: 0cm;">R&eacute;alisez le diagramme de
+	classes de conception d&eacute;taill&eacute;.</p>
+
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p style="margin-bottom: 0cm;">Cr&eacute;ez dans le paquetage
+	&laquo;&nbsp;D- Analyse du domaine&nbsp;&raquo; les classes de
+	conception ainsi que les interfaces&nbsp;;</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">D&eacute;placez dans le paquetage
+	&laquo;&nbsp;D- Analyse du domaine&nbsp;&raquo;, les classes m&eacute;tiers
+	pertinentes. Utilisez les classes m&eacute;tiers lorsque cela est
+	possible&nbsp;au lieu de cr&eacute;er de nouvelles classes dans le
+	paquetage &laquo;&nbsp;D- Analyse du domaine&nbsp;&raquo;&nbsp;;</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">Supprimez les associations qui ne
+	vous semblent plus pertinentes. <b>Attention, il ne faut en aucun
+	cas r&eacute;aliser une suppression d&eacute;finitive (&laquo;&nbsp;delete
+	from model&nbsp;&raquo;)</b>. Il suffit d&rsquo;utiliser la touche
+	&laquo;&nbsp;suppr&nbsp;&raquo;&nbsp;;</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">Positionnez la visibilit&eacute;
+	des r&ocirc;les &agrave; &laquo;&nbsp;private&nbsp;&raquo;&nbsp;; 
+	</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">Ajoutez les attributs ainsi que
+	les m&eacute;thodes des classes&nbsp;;</p>
+
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <p style="margin-bottom: 0cm;">G&eacute;n&eacute;rez le diagramme
+	de classes m&eacute;tier ainsi que le diagramme de classes de
+	conception en s&eacute;lectionnant les classes pertinentes&nbsp;;</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">Ajoutez les param&egrave;tres de
+	g&eacute;n&eacute;ricit&eacute; lorsque cela est n&eacute;cessaire&nbsp;;</p>
+
+  </li>
+</ul>
+
+<p style="margin-left: 0.62cm; margin-bottom: 0cm;">Attention, il faut
+rajouter les imports java n&eacute;cessaires dans les diff&eacute;rentes
+classes&nbsp;;</p>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<ol start="3">
+  <li>
+    <p style="margin-bottom: 0cm;">Faites une archive avec les
+	classes g&eacute;n&eacute;r&eacute;es en veillant &agrave; respecter
+	la hi&eacute;rarchie de fichiers et les r&eacute;pertoires qui les
+	contiennent. On exclura de cette archive les paquetage Java qui sont
+	inutiles car d&eacute;j&agrave; inclus dans le langage Java.</p>
+
+  </li>
+</ol>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<ol start="4">
+  <li>
+    <p style="margin-bottom: 0cm;">Transf&eacute;rez cette archive
+	dans votre r&eacute;pertoire sous Linux avec l&rsquo;outil FileZila.</p>
+
+  </li>
+</ol>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<h1 class="western" lang=""><big><big>Partie programmation sous Linux</big></big></h1>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<ol>
+  <li>
+    <p style="margin-bottom: 0cm;">Extrayez les informations de
+	l&rsquo;archive dans le r&eacute;pertoire &laquo;&nbsp;Atelier1&nbsp;&raquo;&nbsp;;</p>
+
+  </li>
+</ol>
+
+<h2 class="western">Etape 1&nbsp;: Compilation de l&rsquo;application</h2>
+
+<p style="margin-bottom: 0cm;">	L&rsquo;objectif de cette &eacute;tape est
+de compiler l&rsquo;ensemble des classes g&eacute;n&eacute;r&eacute;es
+par StarUML. Pour compiler les classes on rajoutera dans les m&eacute;thodes
+retournant une valeur une instruction return avec une valeur &laquo;&nbsp;null&nbsp;&raquo;
+pour les objets, et une valeur par d&eacute;faut pour les types de
+base. 
+</p>
+
+<p style="margin-bottom: 0cm;"><b><u><i>Attention</i></u></b>&nbsp;:
+StarUML ne faisant pas la diff&eacute;rence entre une m&eacute;thode
+et un constructeur, il faudra v&eacute;rifier pour tous les
+constructeurs qu&rsquo;ils ne sont pas pr&eacute;c&eacute;d&eacute;s par
+&laquo;&nbsp;void&nbsp;&raquo;.</p>
+
+<h2 class="western">Etape 2&nbsp;: D&eacute;tection d&rsquo;une demande</h2>
+
+<p style="margin-bottom: 0cm;">	L&rsquo;objectif de cette &eacute;tape est
+de r&eacute;aliser un serveur qui d&eacute;tecte une demande de
+connexion et retourne au navigateur la cha&icirc;ne de caract&egrave;res
+&laquo;&nbsp;<b><i>Demande reconnue</i></b>&nbsp;&raquo; suivie du
+flux re&ccedil;u par le navigateur. Pour r&eacute;aliser cette &eacute;tape,
+il faudra modifier uniquement la classe &laquo;&nbsp;<b><i>ServeurHTTP</i></b>&nbsp;&raquo;
+et lui ajouter une m&eacute;thode &laquo;&nbsp;main&nbsp;&raquo;
+utilisant un param&egrave;tre qui sera le num&eacute;ro de port. Ce
+num&eacute;ro vous sera donn&eacute; par l&rsquo;enseignant. 
+</p>
+
+<h2 class="western">Etape 3&nbsp;: Cr&eacute;ation d&rsquo;un client</h2>
+
+<p style="margin-bottom: 0cm;">	L&rsquo;objectif de cette &eacute;tape est
+de r&eacute;aliser un serveur qui d&eacute;tecte une demande de
+connexion et cr&eacute;e le client pour lui r&eacute;pondre. Ce
+dernier retourne au navigateur la cha&icirc;ne de caract&egrave;res
+&laquo;&nbsp;<b><i>demande reconnue</i></b>&nbsp;&raquo;. Pour
+r&eacute;aliser cette &eacute;tape, il faudra modifier uniquement les
+classes &laquo;&nbsp;<b><i>ServeurHTTP</i></b>&nbsp;&raquo; et
+&laquo;&nbsp;<b><i>Client</i></b>&nbsp;&raquo;.</p>
+
+<h2 class="western">Etape 4&nbsp;: Envoi d&rsquo;un fichier texte au
+client</h2>
+
+<p style="margin-bottom: 0cm;">	L&rsquo;objectif est de compl&eacute;ter
+la classe &laquo;&nbsp;<b><i>ChargeurFichierTexte</i></b>&nbsp;&raquo;
+afin de pouvoir retourner au client un fichier Texte. Dans un premier
+temps,&nbsp;on testera cette classe en retournant le fichier
+&laquo;&nbsp;<b><i>essai.html</i></b>&nbsp;&raquo; qui devra se
+trouver dans le sous-r&eacute;pertoire &laquo;&nbsp;document&nbsp;&raquo;
+du r&eacute;pertoire &laquo;&nbsp;<b><i>Atelier1</i></b>&nbsp;&raquo;.</p>
+
+<h2 class="western">Etape 5&nbsp;: Analyser la demande de
+l&rsquo;utilisateur</h2>
+
+<p style="margin-bottom: 0cm;">	L&rsquo;objectif de cette &eacute;tape est
+de r&eacute;cup&eacute;rer le flot de donn&eacute;es de
+l&rsquo;utilisateur, d&rsquo;isoler le service demand&eacute; et dans le cas
+d&rsquo;un formulaire d&rsquo;extraire les diff&eacute;rents champs et leur
+valeur. Pour simplifier, le service correspondra &agrave; un service
+lorsque le flux correspond &agrave; un formulaire et au fichier &agrave;
+charger lorsque le flux correspond au chargement d&rsquo;un fichier. 
+</p>
+
+<p style="margin-bottom: 0cm;">Dans cette &eacute;tape, il faut&nbsp;:</p>
+
+<ul>
+  <li>
+    <p style="margin-bottom: 0cm;">D&eacute;velopper l&rsquo;interpr&eacute;teur
+	de flux provenant du navigateur. Pour simplifier, on consid&eacute;rera
+	que tous les champs d&rsquo;un formulaire ont un nom diff&eacute;rent&nbsp;;</p>
+
+	</li>
+  <li>
+    <p style="margin-bottom: 0cm;">Int&eacute;grer cet interpr&egrave;te
+	au client pour que  lorsque le serveur re&ccedil;oit une demande, le
+	client analyse la demande et fournit le r&eacute;sultat escompt&eacute;.</p>
+
+  </li>
+</ul>
+
+<p style="margin-bottom: 0cm;">Pour tester cette fonctionnalit&eacute;
+vous chargerez le fichier &laquo;&nbsp;<b><i>essai.html</i></b>&nbsp;&raquo;
+et le formulaire &laquo;&nbsp;<b><i>form1.html</i></b>&nbsp;&raquo;.</p>
+
+<h2 class="western">Etape 6&nbsp;: Traitement d&rsquo;un formulaire</h2>
+
+<p style="margin-bottom: 0cm;">	L&rsquo;objectif de cette &eacute;tape est
+le traitement d&rsquo;un formulaire, c&rsquo;est-&agrave;-dire la
+r&eacute;cup&eacute;ration des champs du formulaire leur
+interpr&eacute;tation et la mise en &oelig;uvre du service demand&eacute;e.
+Dans notre cas le seul service fournit par le serveur est un service
+de calculatrice. Ce service permet d&rsquo;effectuer l&rsquo;op&eacute;ration
+sur deux op&eacute;randes. L&rsquo;op&eacute;ration et les op&eacute;randes
+sont pass&eacute;es en param&egrave;tres. La r&eacute;ponse &agrave;
+une demande de calcul est le r&eacute;sultat du calcul dans un
+premier temps. 
+</p>
+
+<h2 class="western">Etape 7&nbsp;: Finalisation du serveur</h2>
+
+<p style="margin-bottom: 0cm;">	Afin de finaliser le serveur, il faut
+int&eacute;grer les diff&eacute;rentes classes d&eacute;velopp&eacute;es
+lors des &eacute;tapes pr&eacute;c&eacute;dentes afin d&rsquo;obtenir un
+serveur http op&eacute;rationnel. On veillera &agrave; ajouter une
+classe permettant de charger une image au format JPEG. On testera le
+serveur complet avec les fichiers &laquo;&nbsp;<b><i>essai.html</i></b>&nbsp;&raquo;,
+&laquo;&nbsp;<b><i>form1.html</i></b>&nbsp;&raquo; et
+&laquo;&nbsp;<b><i>essai3.html</i></b>&nbsp;&raquo;.</p>
+
+</div>
+</div>
+</body>
+</html>
